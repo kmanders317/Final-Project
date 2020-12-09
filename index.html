@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="path-to-javascript-script.js">
+
+	</script>
+	<script src="https://d3js.org/d3.v6.min.js">
+
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js">
+
+	</script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	</link>
+
+	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+	 crossorigin="" />
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+	 crossorigin="">
+
+	</script>
+	<title> Chart</title>
+</head>
+
+<body>
+	<div id="intro">
+		<h1>Comparing the 1918 Spanish Flu Pandemic to the Current Covid-19 Pandemic</h1><br><br>
+    <h2> Introduction</h2>
+    <p>Hi this project is comparing the Spanish Flu from 1918 and the Covid-19 Pandemic that is ongoing. With this project we can see the deaths and cases of each pandemic for each state in the U.S. Along with the data of both pandemics you will get a description of what happened and how they originated.</p><br>
+  </div>
+  <div id="spanish">
+    <h2>1918 Spanish Influenza Pandemic</h2>
+    <p> 
+      The 1918 influenza pandemic was the most severe pandemic in recent history. It was caused by an H1N1 virus with genes of avian origin. Although there is not universal consensus regarding where the virus originated, it spread worldwide during 1918-1919.  In the United States, it was first identified in military personnel in spring 1918.<br><br>   It is estimated that about 500 million people or one-third of the world’s population became infected with this virus. The number of deaths was estimated to be at least 50 million worldwide with about 675,000 occurring in the United States. Mortality was high in people younger than 5 years old, 20-40 years old, and 65 years and older. The high mortality in healthy people, including those in the 20-40 year age group, was a unique feature of this pandemic.<br><br>  While the 1918 H1N1 virus has been synthesized and evaluated, the properties that made it so devastating are not well understood. With no vaccine to protect against influenza infection and no antibiotics to treat secondary bacterial infections that can be associated with influenza infections,control efforts worldwide were limited to non-pharmaceutical interventions such as isolation, quarantine, good personal hygiene, use of disinfectants, and limitations of public gatherings, which were applied unevenly.
+    </p>
+    <h5 class="source"> <strong>Source:</strong> Center for Disease Control and Protection(<a href="https://www.cdc.gov/flu/pandemic-resources/1918-commemoration/historical-images.htm">https://www.cdc.gov/flu/pandemic-resources/1918-commemoration/historical-images.htm</a>) </h5>
+    <img src= "https://health.mil/-/media/Images/MHS/Photos/NPC-1603.ashx?h=408&la=en&mw=720&w=720&hash=B8A6B64995E51CCC51E35302638F0FF53E9F8EB13D2DB6492C0F907E10BDD07F" width="500">
+    <img src="https://cdn.sanity.io/images/0vv8moc6/infenctioncontrol/cfb3fb43107dca1c7b073f7828596b026f8344e6-1540x800.jpg" width="500">
+    <img src="https://media3.s-nbcnews.com/j/newscms/2020_19/3342901/200508-spanish-flu-masks-se-420_0684bb5e0be70bd2fc748c5946be89f7.nbcnews-fp-1200-630.jpg" width="500">
+    <img src="https://assets.weforum.org/article/image/large_PqQCIZS1-KMqxsDZLL9DrtoZYHpNPLx10WyXCXNjUw8.JPG" width="500">
+    <img 
+    src= "ambulanceDuty.png" width="500">
+     <img src="redCrossVolunteers.png" width="500">
+  </div>
+  <div id="covid">
+    <h3> Covid-19 Pandemic</h3>
+    <p> The ongoing Covid-19 pandemic has infected millions of people throughout the world. As of now, it has been a full year since the first cases have been reported of the Coronavirus. In early 2020, after a December 2019 outbreak in China, the World Health Organization identified SARS-CoV-2 as a new type of coronavirus. The outbreak quickly spread around the world.COVID-19 is a disease caused by SARS-CoV-2 that can trigger what doctors call a respiratory tract infection. It can affect your upper respiratory tract(nose and throat) or lower respiratory tract (windpipe and lungs).It spreads the same way other coronaviruses do, mainly through person-to-person contact. Infections range from mild to deadly. 
+    </p>
+    <img src=
+    "https://phil.cdc.gov//PHIL_Images/23312/23312.tif" width="500"
+    "https://i.insider.com/5e2b73fb24306a7c4f011fe3?" width="500">
+    <img 
+    src=   "https://i.insider.com/5e2b73fb24306a7c4f011fe3?" width="500">
+    <img
+    src= "https://c.files.bbci.co.uk/1091C/production/_114186876_2.png?" width="500">
+    <img
+    src= "https://www.bu.edu/files/2020/01/resize-GettyImages-1196115521.jpg" width="500">
+
+   
+
+  </div>
+
+	<div class="container">
+    <canvas id="myChart"></canvas>
+		<canvas id="totalCases"></canvas>
+		<canvas id="totalTimeDeaths"></canvas>
+		<canvas id="totalTimeCases"></canvas>
+	</div>
+	
+  <!-- Coronavirus Map -->
+
+	<div id="mapContainer">
+    <div id='map'></div>
+		<div id='anotherMap'></div>
+	</div>
+
+	<script type="text/javascript" src="us-states.js">
+
+	</script>
+	<script type="text/javascript" src="us1-states.js">
+	</script>
+	<div id="barContainer">
+    <script src="bar-graphs.js"></script>
+  </div>
+	
+  <script src="spanish-map.js"></script>
+	<script src="coronavirus-map.js"></script>
+</body>
+
+</html>
