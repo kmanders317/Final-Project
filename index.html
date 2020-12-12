@@ -20,8 +20,8 @@
 
 	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
 
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-	 crossorigin="" />
+	 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+	 crossorigin="" /> 
 	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
 	 crossorigin="">
 
@@ -30,57 +30,123 @@
 </head>
 
 <body>
-	<div id="intro">
+  <ul>
+  <li><a href="#spanish">1918 Spanish Flu</a></li>
+  <li><a href="#covid">2020 Covid-19 Pandemic</a></li>
+  <li><a href="#images">Then & Now</a></li>
+  <li><a href="#barGraph">Data</a></li>
+  </ul> 
+	<div id="intro"><br><br><br>
 		<h1>Comparing the 1918 Spanish Flu Pandemic to the Current Covid-19 Pandemic</h1><br><br>
     <h2> Introduction</h2>
-    <p>Hi this project is comparing the Spanish Flu from 1918 and the Covid-19 Pandemic that is ongoing. With this project we can see the deaths and cases of each pandemic for each state in the U.S. Along with the data of both pandemics you will get a description of what happened and how they originated.</p><br>
+    <p>This project is comparing the Spanish Flu from 1918 and the Covid-19 Pandemic that is ongoing. With this project we can compare the deaths and cases of each pandemic for each state in the U.S. Along with the data of both pandemics, we will compare other aspects of each pandemic in the United States.</p><br>
   </div>
   <div id="spanish">
     <h2>1918 Spanish Influenza Pandemic</h2>
     <p> 
       The 1918 influenza pandemic was the most severe pandemic in recent history. It was caused by an H1N1 virus with genes of avian origin. Although there is not universal consensus regarding where the virus originated, it spread worldwide during 1918-1919.  In the United States, it was first identified in military personnel in spring 1918.<br><br>   It is estimated that about 500 million people or one-third of the world’s population became infected with this virus. The number of deaths was estimated to be at least 50 million worldwide with about 675,000 occurring in the United States. Mortality was high in people younger than 5 years old, 20-40 years old, and 65 years and older. The high mortality in healthy people, including those in the 20-40 year age group, was a unique feature of this pandemic.<br><br>  While the 1918 H1N1 virus has been synthesized and evaluated, the properties that made it so devastating are not well understood. With no vaccine to protect against influenza infection and no antibiotics to treat secondary bacterial infections that can be associated with influenza infections,control efforts worldwide were limited to non-pharmaceutical interventions such as isolation, quarantine, good personal hygiene, use of disinfectants, and limitations of public gatherings, which were applied unevenly.
     </p>
-    <h5 class="source"> <strong>Source:</strong> Center for Disease Control and Protection(<a href="https://www.cdc.gov/flu/pandemic-resources/1918-commemoration/historical-images.htm">https://www.cdc.gov/flu/pandemic-resources/1918-commemoration/historical-images.htm</a>) </h5>
-    <img src= "https://health.mil/-/media/Images/MHS/Photos/NPC-1603.ashx?h=408&la=en&mw=720&w=720&hash=B8A6B64995E51CCC51E35302638F0FF53E9F8EB13D2DB6492C0F907E10BDD07F" width="500">
-    <img src="https://cdn.sanity.io/images/0vv8moc6/infenctioncontrol/cfb3fb43107dca1c7b073f7828596b026f8344e6-1540x800.jpg" width="500">
-    <img src="https://media3.s-nbcnews.com/j/newscms/2020_19/3342901/200508-spanish-flu-masks-se-420_0684bb5e0be70bd2fc748c5946be89f7.nbcnews-fp-1200-630.jpg" width="500">
-    <img src="https://assets.weforum.org/article/image/large_PqQCIZS1-KMqxsDZLL9DrtoZYHpNPLx10WyXCXNjUw8.JPG" width="500">
-    <img 
-    src= "ambulanceDuty.png" width="500">
-     <img src="redCrossVolunteers.png" width="500">
+    <!-- <h5 class="source"> <strong>Source:</strong> Center for Disease Control and Protection(<a href="https://www.cdc.gov/flu/pandemic-resources/1918-commemoration/historical-images.htm">https://www.cdc.gov/flu/pandemic-resources/1918-commemoration/historical-images.htm</a>) </h5> -->
   </div>
+  <div class="imgContainer">
+  <img src= "https://health.mil/-/media/Images/MHS/Photos/NPC-1603.ashx?h=408&la=en&mw=720&w=720&hash=B8A6B64995E51CCC51E35302638F0FF53E9F8EB13D2DB6492C0F907E10BDD07F" width="50%">
+    <img src="https://cdn.sanity.io/images/0vv8moc6/infenctioncontrol/cfb3fb43107dca1c7b073f7828596b026f8344e6-1540x800.jpg" width="50%" >
+    </div>
+    <div class="imgContainer">
+    <img src="https://media3.s-nbcnews.com/j/newscms/2020_19/3342901/200508-spanish-flu-masks-se-420_0684bb5e0be70bd2fc748c5946be89f7.nbcnews-fp-1200-630.jpg" width="50%">
+    <img src="https://assets.weforum.org/article/image/large_PqQCIZS1-KMqxsDZLL9DrtoZYHpNPLx10WyXCXNjUw8.JPG" width="50%">
+    </div>
+    <div class="imgContainer">
+    <!-- <img 
+    src= "ambulanceDuty.png" width="50%">
+     <img src="redCrossVolunteers.png" width="50%"> -->
+     </div>
+  </div><br><br>
   <div id="covid">
-    <h3> Covid-19 Pandemic</h3>
+    <h2> Covid-19 Pandemic</h2>
     <p> The ongoing Covid-19 pandemic has infected millions of people throughout the world. As of now, it has been a full year since the first cases have been reported of the Coronavirus. In early 2020, after a December 2019 outbreak in China, the World Health Organization identified SARS-CoV-2 as a new type of coronavirus. The outbreak quickly spread around the world.COVID-19 is a disease caused by SARS-CoV-2 that can trigger what doctors call a respiratory tract infection. It can affect your upper respiratory tract(nose and throat) or lower respiratory tract (windpipe and lungs).It spreads the same way other coronaviruses do, mainly through person-to-person contact. Infections range from mild to deadly. 
     </p>
+    <div class="imgContainer">
     <img src=
-    "https://phil.cdc.gov//PHIL_Images/23312/23312.tif" width="500"
-    "https://i.insider.com/5e2b73fb24306a7c4f011fe3?" width="500">
+    "https://phil.cdc.gov//PHIL_Images/23312/23312.tif" width="50%">
+    <img
+    "https://i.insider.com/5e2b73fb24306a7c4f011fe3?" width="50%">
     <img 
-    src=   "https://i.insider.com/5e2b73fb24306a7c4f011fe3?" width="500">
+    src=   "https://i.insider.com/5e2b73fb24306a7c4f011fe3?" width="50%">
+    </div>
+    <div class="imgContainer">
     <img
-    src= "https://c.files.bbci.co.uk/1091C/production/_114186876_2.png?" width="500">
+    src= "https://c.files.bbci.co.uk/1091C/production/_114186876_2.png?" width="50%">
     <img
-    src= "https://www.bu.edu/files/2020/01/resize-GettyImages-1196115521.jpg" width="500">
-
-   
-
+    src= "https://www.bu.edu/files/2020/01/resize-GettyImages-1196115521.jpg" width="50%">
+    </div>
+  </div>
+  
+  <div id="images">
+  
+  <br><br><br>
+  <h2>1918 Spanish Flu      ------------------------- 2020 Covid-19</h2>
+  <p> There are many similarities between the 1918 pandemic and the current pandemic. It is important to learn from past mistakes and successes in order to handle the current pandemic in a more efficient manner.</p>
+  
+  
+  <div class="imgContainer">
+  <img src="https://www.history.com/.image/t_share/MTcyMzU5NjgwNjA0MTIwOTA5/1918-flu-masks-gettyimages-1219167388.jpg" width="50%">
+  <img src="https://d279m997dpfwgl.cloudfront.net/wp/2020/03/0525_barber-shop-reopening01-1000x667.jpg" width="50%">
   </div>
 
-	<div class="container">
-    <canvas id="myChart"></canvas>
-		<canvas id="totalCases"></canvas>
-		<canvas id="totalTimeDeaths"></canvas>
-		<canvas id="totalTimeCases"></canvas>
+  <div class="imgContainer">
+  <img src="https://bloximages.newyork1.vip.townnews.com/unionleader.com/content/tncms/assets/v3/editorial/e/81/e818a378-b5e5-5025-b651-68584053f949/5e6bc00e4f124.image.jpg?resize=795%2C630" width="50%">
+  <img src="https://s.abcnews.com/images/WNT/200330_wn_gutman1_hpMain_16x9_992.jpg" width="50%">
+  </div>
+  <h3>Anti-maskers</h3>
+  <p>
+    In 1918, masks were required in many cities, and those who resited were fined. San Francisco’s first masking order began in October and ended in November after the World War I armistice. In January, when flu cases began to surge again in San Francisco, the city implemented a second mask order. This time, the resistance was much more intense. A group that included a few physicians and one member of the Board of Supervisors formed the “Anti-Mask League,” which held a public meeting with over 2,000 attendees.<br><br>
+
+    Today, many Americans refuse to wear masks and protect others. This group is very similar to the "Anti-Mask League" of 1918
+  </p><br>
+  <div class="imgContainer">
+  <img src="https://specials-images.forbesimg.com/imageserve/5ea9fa2812fcd40006de03ff/960x0.jpg?cropX1=0&cropX2=297&cropY1=29&cropY2=252" width="50%">
+  <img src="https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/TTNIYMUMWUI6VAG72JFTLJLIVY.jpg" width="50%">
+  </div><br><br>
+  <h3>Schools</h3>
+  <p>
+    As the second wave of the Spanish flu hit in September 1918, many schools closed their doors, but in New York and Chicago, public schools were kept open. Government officials argued that kids were better off contained in schools, and that regular medical inspections could identify sick students and keep healthy ones safe. Students with any symptoms were immediately isolated. If they were feverish, they were sent home, after which a health official would be sent to their homes to determine if they could recover there or needed to be sent to a hospital. Many officials believed that children were better off in school, under supervision, and that they would be kept safe.<br><br>
+
+    Currently, many students continue to learn online through distance learning. Some school districts are learning in-person or participating in a hybrid schedule. For those learning in-person, masks may be only an option and not a requirement.
+  </p>
+  <div class="imgContainer">
+  <img src="https://media.9news.com/assets/KUSA/images/aea608b7-36a5-4485-8ff8-a3812c3a1a1c/aea608b7-36a5-4485-8ff8-a3812c3a1a1c_1140x641.jpg" width="50%">
+  <img src="https://www.ksat.com/resizer/zqoLbZ4_FzhFQvZUaSueJU8zuBw=/1600x900/smart/filters:format(jpeg):strip_exif(true):strip_icc(true):no_upscale(true):quality(65)/cloudfront-us-east-1.images.arcpublishing.com/gmg/6GRVCZWGQ5ES3OJ6OH7GARHIUQ.jpg" width="50%">
+  </div>
+  
+<br></br>
+  </div>
+  <div id="barGraph">
+  <h2> Data </h2>
+  <p> We decided to analyze data from both pandemics in order to efficiently compare them. Below, we compared the number of cases and deaths of each pandemic (as of December 2020 for COVID-19).</p><br><br>
+  <div class="container">
+    <div><canvas id="totalTimeCases"></canvas></div>
+    <div><canvas id="totalTimeDeaths"></canvas></div>
 	</div>
+<h6>The data gathered of cases and deaths of both pandemics were used to compare the amount of cases that were contracted for both the Spanish Flu and COVID-19. It shows that COVID-19 had more cases in the first month than the Spanish Flu but when the second month rolled around the Spanish Flu had way more cases than COVID-19.</h6><br></br>
+	<div class="container">
+    <div><canvas 
+    id="totalCases"></canvas></div>
+    <div><canvas id="myChart"></canvas></div>  
+    
+	</div>
+  <h6>Looking at the total number of cases versus deaths among the Spanish Flu and the Coronavirus, the Spanish Flu has drastic results when compared. The reason for that varies which includes not having the accessible medical supplies in 1918 that we may have today. Another reason may be the fact that the 1918 Spanish Flu has ended and was active for two years ( ending in 1920) , while the COVID-19 pandemic is continuing to infect others as we are on our first year currently. </h6><br><br><br><br>
+  </div>
+  
 	
   <!-- Coronavirus Map -->
 
 	<div id="mapContainer">
-    <div id='map'></div>
-		<div id='anotherMap'></div>
+    <h3> Spanish Flu Deaths vs Coronavirus Deaths </h3><br>
+    <div id='map'></div><br><h6>This map shows all of the Coronavirus deaths in U.S.A. You can see the legend given with the colors showing the amount of deaths that happened in each state. They range from 0-50 and 450+.</h6><br><br><br><br>
+		<div id='anotherMap'></div> 
 	</div>
-
+  <br><h6>The Spanish Flu was clearly more extreme with many states shades purple, indicating the amounts of deaths to be more on the extreme side. The numbers of deaths shown are per 100,000. </h6>
 	<script type="text/javascript" src="us-states.js">
 
 	</script>
@@ -92,6 +158,10 @@
 	
   <script src="spanish-map.js"></script>
 	<script src="coronavirus-map.js"></script>
+  <br><br>
+  <h2>Conclusion</h2>
+  <p>After analyzing this data, it is apparent that as of now, the 1918 pandemic was much more severe than the current pandemic. This could be due to the lack of modern medical technologies in 1918. Hopefully we can continue to learn from previous pandemics in order to more effectively handle the current pandemic.<p><br><br>
+  <h5> Created by Kayla Maa, Karina Anders, and Caleb Kha
 </body>
 
 </html>

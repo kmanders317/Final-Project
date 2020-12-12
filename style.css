@@ -1,7 +1,8 @@
-/* html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-} */
+body {
+    padding: 10%;
+    background-color: bisque !important;
+    font-family: 
+} 
 
 .source {
   font-size: 10px;
@@ -37,14 +38,20 @@
 /* Make sure that the div for the map has a width and height */
 
 #map, #anotherMap {
-  width: 900px;
+  width: 1000px;
   height: 500px;
-  margin: 100px;
 }
 
 .container {
-  display: grid;
-  grid-template-columns: auto auto;
+  /* display: grid;
+  grid-template-columns: auto auto; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.container > div {
+  width: 50%;
+  height: 500px;
 }
 
 /* .container > canvas {
@@ -66,7 +73,7 @@
   margin: 50px; /* This part adds space between the maps */
 }
 
-#intro {
+/*#intro {
   margin: 50px;
 }
 
@@ -77,4 +84,38 @@
 #covid {
   margin: 50px;
 }
+*/
 
+img {
+  width: 40%;
+}
+
+.imgContainer{
+  width: 100%;
+  display: flex;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
